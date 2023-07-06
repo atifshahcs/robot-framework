@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.8.16 on win32)" generated="20230615 01:11:45.082" rpa="false" schemaversion="3">
+<suite id="s1" name="6 Mouse-Operation" source="D:\robot-framework\Tests\6_mouse-operation.robot">
+<test id="s1-t1" name="MouseActions" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://swisnl.github.io/jQuery-contextMenu/3.x/demo.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230615 01:11:45.350" level="INFO">Opening browser 'chrome' to base url 'https://swisnl.github.io/jQuery-contextMenu/3.x/demo.html'.</msg>
+<status status="PASS" starttime="20230615 01:11:45.349" endtime="20230615 01:11:46.752"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230615 01:11:46.753" endtime="20230615 01:11:46.879"/>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>xpath:(//span[@class='context-menu-one btn btn-neutral'])[1]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230615 01:11:46.879" endtime="20230615 01:11:47.189"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230615 01:11:50.200" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230615 01:11:47.190" endtime="20230615 01:11:50.200"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230615 01:11:50.201" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
+<status status="PASS" starttime="20230615 01:11:50.201" endtime="20230615 01:11:51.934"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230615 01:11:51.935" endtime="20230615 01:11:51.940"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>xpath:(//button[normalize-space()='Copy Text'])[1]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20230615 01:11:51.941" level="INFO">Double clicking element 'xpath:(//button[normalize-space()='Copy Text'])[1]'.</msg>
+<status status="PASS" starttime="20230615 01:11:51.940" endtime="20230615 01:11:52.245"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230615 01:11:55.250" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230615 01:11:52.246" endtime="20230615 01:11:55.250"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230615 01:11:55.251" level="INFO">Opening url 'http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html'</msg>
+<status status="PASS" starttime="20230615 01:11:55.251" endtime="20230615 01:11:56.339"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230615 01:11:56.340" endtime="20230615 01:11:56.345"/>
+</kw>
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>id:box4</arg>
+<arg>id:box104</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" starttime="20230615 01:11:56.346" endtime="20230615 01:11:57.017"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230615 01:12:00.019" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230615 01:11:57.018" endtime="20230615 01:12:00.019"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230615 01:12:00.020" endtime="20230615 01:12:02.201"/>
+</kw>
+<status status="PASS" starttime="20230615 01:11:45.348" endtime="20230615 01:12:02.202"/>
+</test>
+<status status="PASS" starttime="20230615 01:11:45.085" endtime="20230615 01:12:02.205"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="6 Mouse-Operation">6 Mouse-Operation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
