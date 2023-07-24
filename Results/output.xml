@@ -1,80 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.8.16 on win32)" generated="20230615 01:11:45.082" rpa="false" schemaversion="3">
-<suite id="s1" name="6 Mouse-Operation" source="D:\robot-framework\Tests\6_mouse-operation.robot">
-<test id="s1-t1" name="MouseActions" line="5">
+<robot generator="Robot 6.0.2 (Python 3.8.16 on win32)" generated="20230724 22:14:27.107" rpa="false" schemaversion="3">
+<suite id="s1" name="7 User-Keywords" source="D:\robot-framework\Tests\7_user-keywords.robot">
+<test id="s1-t1" name="TestCasePositive" line="10">
+<kw name="LaunchBrowser" library="resources">
+<var>${app_title}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://swisnl.github.io/jQuery-contextMenu/3.x/demo.html</arg>
-<arg>chrome</arg>
+<arg>${arg_url}</arg>
+<arg>${arg_browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230615 01:11:45.350" level="INFO">Opening browser 'chrome' to base url 'https://swisnl.github.io/jQuery-contextMenu/3.x/demo.html'.</msg>
-<status status="PASS" starttime="20230615 01:11:45.349" endtime="20230615 01:11:46.752"/>
+<msg timestamp="20230724 22:14:27.425" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<status status="PASS" starttime="20230724 22:14:27.424" endtime="20230724 22:14:30.772"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230615 01:11:46.753" endtime="20230615 01:11:46.879"/>
+<status status="PASS" starttime="20230724 22:14:30.772" endtime="20230724 22:14:30.896"/>
 </kw>
-<kw name="Open Context Menu" library="SeleniumLibrary">
-<arg>xpath:(//span[@class='context-menu-one btn btn-neutral'])[1]</arg>
-<doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230615 01:11:46.879" endtime="20230615 01:11:47.189"/>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230724 22:14:30.903" level="INFO">${title} = Test Login | Practice Test Automation</msg>
+<status status="PASS" starttime="20230724 22:14:30.896" endtime="20230724 22:14:30.903"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230615 01:11:50.200" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230615 01:11:47.190" endtime="20230615 01:11:50.200"/>
+<msg timestamp="20230724 22:14:30.904" level="INFO">${app_title} = Test Login | Practice Test Automation</msg>
+<status status="PASS" starttime="20230724 22:14:27.424" endtime="20230724 22:14:30.904"/>
 </kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://testautomationpractice.blogspot.com/</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230615 01:11:50.201" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
-<status status="PASS" starttime="20230615 01:11:50.201" endtime="20230615 01:11:51.934"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${app_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230724 22:14:30.904" endtime="20230724 22:14:30.905"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230615 01:11:51.935" endtime="20230615 01:11:51.940"/>
+<kw name="Log" library="BuiltIn">
+<arg>${app_title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230724 22:14:30.906" level="INFO">Test Login | Practice Test Automation</msg>
+<status status="PASS" starttime="20230724 22:14:30.906" endtime="20230724 22:14:30.906"/>
 </kw>
-<kw name="Double Click Element" library="SeleniumLibrary">
-<arg>xpath:(//button[normalize-space()='Copy Text'])[1]</arg>
-<doc>Double clicks the element identified by ``locator``.</doc>
-<msg timestamp="20230615 01:11:51.941" level="INFO">Double clicking element 'xpath:(//button[normalize-space()='Copy Text'])[1]'.</msg>
-<status status="PASS" starttime="20230615 01:11:51.940" endtime="20230615 01:11:52.245"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230615 01:11:55.250" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230615 01:11:52.246" endtime="20230615 01:11:55.250"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230615 01:11:55.251" level="INFO">Opening url 'http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html'</msg>
-<status status="PASS" starttime="20230615 01:11:55.251" endtime="20230615 01:11:56.339"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230615 01:11:56.340" endtime="20230615 01:11:56.345"/>
-</kw>
-<kw name="Drag And Drop" library="SeleniumLibrary">
-<arg>id:box4</arg>
-<arg>id:box104</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" starttime="20230615 01:11:56.346" endtime="20230615 01:11:57.017"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath: //input[@id='username']</arg>
+<arg>student</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230724 22:14:30.907" level="INFO">Typing text 'student' into text field 'xpath: //input[@id='username']'.</msg>
+<status status="PASS" starttime="20230724 22:14:30.906" endtime="20230724 22:14:31.021"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
+<arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230615 01:12:00.019" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230615 01:11:57.018" endtime="20230615 01:12:00.019"/>
+<msg timestamp="20230724 22:14:32.033" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230724 22:14:31.022" endtime="20230724 22:14:32.033"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230615 01:12:00.020" endtime="20230615 01:12:02.201"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath: //input[@id='password']</arg>
+<arg>Password123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230724 22:14:32.035" level="INFO">Typing text 'Password123' into text field 'xpath: //input[@id='password']'.</msg>
+<status status="PASS" starttime="20230724 22:14:32.034" endtime="20230724 22:14:32.133"/>
 </kw>
-<status status="PASS" starttime="20230615 01:11:45.348" endtime="20230615 01:12:02.202"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230724 22:14:33.138" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230724 22:14:32.133" endtime="20230724 22:14:33.138"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230724 22:14:33.139" level="INFO">Clicking button 'xpath://button[@id='submit']'.</msg>
+<status status="PASS" starttime="20230724 22:14:33.139" endtime="20230724 22:14:36.025"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230724 22:14:37.038" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230724 22:14:36.026" endtime="20230724 22:14:37.038"/>
+</kw>
+<status status="PASS" starttime="20230724 22:14:27.422" endtime="20230724 22:14:37.039"/>
 </test>
-<status status="PASS" starttime="20230615 01:11:45.085" endtime="20230615 01:12:02.205"/>
+<status status="PASS" starttime="20230724 22:14:27.109" endtime="20230724 22:14:37.041"/>
 </suite>
 <statistics>
 <total>
@@ -83,7 +86,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="6 Mouse-Operation">6 Mouse-Operation</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="7 User-Keywords">7 User-Keywords</stat>
 </suite>
 </statistics>
 <errors>
