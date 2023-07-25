@@ -11,5 +11,5 @@ Web automation using robot framework with selenium library.
 <code> pip install robotframework-seleniumlibrary </code>
 
 ## Run files
-<code> robot -d <path_for_results> <file_name> </code>
+<code>robot -d <path_for_results> <file_name> </code>
 
