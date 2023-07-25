@@ -20,4 +20,3 @@ TestCasePositive
 
     Click Button    xpath://button[@id='submit']
     Sleep    1
-
